@@ -43,7 +43,11 @@
         </widget>
        </item>
        <item>
-        <widget class="QListView" name="listResult"/>
+        <widget class="QListView" name="listResult">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+        </widget>
        </item>
       </layout>
      </item>
