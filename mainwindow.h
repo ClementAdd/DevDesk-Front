@@ -10,10 +10,19 @@ QT_END_NAMESPACE
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
+    bool m_isBusy = false;
 
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+
+    bool isBusy() const;
+
+    void setIsBusy(bool newIsBusy);
+
+private slots:
+
+    void on_btnSearch_clicked();
 
 private:
     Ui::MainWindow *ui;
